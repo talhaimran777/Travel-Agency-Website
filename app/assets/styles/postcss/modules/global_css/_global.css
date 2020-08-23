@@ -10,3 +10,8 @@ body{
     color: black;
     background: grey;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
