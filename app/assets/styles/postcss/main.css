@@ -1,11 +1,2 @@
-/* This is post css file you can use variables, nested css and prefixers for browsers */
-$color:  red; 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-h1{
-    color: $color;
-}
+@import 'normalize.css';
+@import './modules/global_css/_global';
