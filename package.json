@@ -1,0 +1,22 @@
+{
+  "name": "travel-agency-website",
+  "version": "1.0.0",
+  "description": "Travel Agency Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talhaimran777/Travel-Agency-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talhaimran777/Travel-Agency-Website/issues"
+  },
+  "homepage": "https://github.com/talhaimran777/Travel-Agency-Website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
