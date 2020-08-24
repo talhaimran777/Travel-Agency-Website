@@ -1,0 +1,12 @@
+.heroSection{
+    height: 100vh;
+    background: blue;
+    &__header{
+        height: 8vh;
+        background: rgb(0, 0, 0, 0.6);
+
+        &__logo{
+            background: red;
+        }
+    }
+}

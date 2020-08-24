@@ -350,8 +350,9 @@ template {
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -360,10 +361,20 @@ html{
 
 body{
     color: black;
-    background: grey;
+    background: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+.heroSection{
+    height: 100vh;
+    background: blue;
 }
+
+.heroSection__header{
+        height: 8vh;
+        background: rgb(0, 0, 0, 0.6);
+    }
+
+.heroSection__header__logo{
+            background: red;
+        }
