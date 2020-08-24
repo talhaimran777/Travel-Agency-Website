@@ -3,9 +3,13 @@
     padding: 1rem 2rem;
     font-size: 1.8rem;
     color: white;
+    text-decoration: none;
 
+    &--blue{
+        background: $blueShade;
+    }
     &--orange{
-        background: orange;
+        background: $orangeShade;
     }
 
     &--rounded{
