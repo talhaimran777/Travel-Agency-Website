@@ -19,21 +19,16 @@ function onHtmlChange(cb){
     cb();
 }
 
-/* Not understanding this method right now but everything working fine */
-/* function injectCss(onCssChange){
-    return src('./app/assets/styles/css/main.css')
-    .pipe(browserSync.stream());
-} */
-
 function watchAll(cb){
     browserSync.init({
+        notify: false,
         server: {
            baseDir: 'app', 
         }
-    });
+    }); 
     watch('./app/assets/styles/postcss/**/*.css', onCssChange);
     watch('./app/index.html',onHtmlChange);
     cb();
 }
 
-exports.default = watchAll; 
+exports.default = watchAll;
