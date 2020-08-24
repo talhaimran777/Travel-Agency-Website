@@ -352,6 +352,7 @@ template {
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -360,5 +361,77 @@ html{
 
 body{
     color: black;
-    background: grey;
+    background: white;
+    font-family: 'Roboto', 'sans-serif';
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.large-hero{
+    position: relative;
+
+}
+
+.large-hero__text-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #2f5572;
+        padding: 2rem 0;
+    }
+
+.large-hero__title{
+        font-weight: 300;
+    }
+
+.large-hero__title--primary{
+            font-size: 8rem;
+            margin-bottom: 0px;
+        }
+
+.large-hero__title--secondary{
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+.large-hero__paragraph{
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        font-weight: 100;
+        text-shadow: 0.2rem 0.2rem 0px rgb(0, 0, 0, 0.2);
+    }
+
+.large-hero__button{
+        color: white;
+        background: #2f5572;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        border-radius: 2.5rem;
+    }
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.btn--orange{
+        background: orange;
+    }
+
+.btn--rounded{
+        border-radius: 2.5rem;
+    }
+
+.btn--large{
+        padding: 1.6rem 3.5rem;
+        font-size: 2.1rem;
+    }
