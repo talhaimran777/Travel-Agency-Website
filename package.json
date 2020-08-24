@@ -18,6 +18,7 @@
   "homepage": "https://github.com/talhaimran777/Travel-Agency-Website#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-watch": "^5.0.1",

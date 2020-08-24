@@ -3,7 +3,8 @@ postCss = require('gulp-postcss'),
 autoPrefixer = require('autoprefixer'),
 simpleVars = require('postcss-simple-vars'),
 nestedCss = require('postcss-nested'),
-postcssImport = require('postcss-import');
+postcssImport = require('postcss-import'),
+browserSync = require('browser-sync').create();
 
 
 function onCssChange(){
@@ -12,9 +13,20 @@ function onCssChange(){
     .pipe(dest('./app/assets/styles/css/'));
 }
 
-function watchPostCss(cb){
-    watch('./app/assets/styles/postcss/**/*.css', onCssChange);
+function onHtmlChange(cb){
+    browserSync.reload();
     cb();
 }
 
-exports.default = watchPostCss; 
+function watchAll(cb){
+    browserSync.init({
+        server: {
+           baseDir: 'app', 
+        }
+    });
+    watch('./app/index.html',onHtmlChange);
+    //watch('./app/assets/styles/postcss/**/*.css', onCssChange);
+    cb();
+}
+
+exports.default = watchAll; 
