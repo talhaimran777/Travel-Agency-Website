@@ -351,7 +351,10 @@ template {
 
 *{
     margin: 0;
+<<<<<<< HEAD
     padding: 0;
+=======
+>>>>>>> newbranch
     box-sizing: border-box;
 }
 
@@ -362,6 +365,7 @@ html{
 body{
     color: black;
     background: white;
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
 }
 
@@ -378,3 +382,83 @@ body{
 .heroSection__header__logo{
             background: red;
         }
+=======
+    font-family: 'Roboto', 'sans-serif';
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.large-hero{
+    position: relative;
+}
+
+.large-hero__text-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        color: #2f5572;
+        padding: 2rem 0;
+    }
+
+.large-hero__title{
+        font-weight: 300;
+    }
+
+.large-hero__title--primary{
+            font-size: 8rem;
+            margin-bottom: 0px;
+        }
+
+.large-hero__title--secondary{
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+.large-hero__paragraph{
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        font-weight: 100;
+        text-shadow: 0.2rem 0.2rem 0px rgb(0, 0, 0, 0.2);
+    }
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.btn--blue{
+        background: #2f5572;
+    }
+
+.btn--orange{
+        background: #d59541;
+    }
+
+.btn--rounded{
+        border-radius: 2.5rem;
+    }
+
+.btn--large{
+        padding: 1.6rem 3.5rem;
+        font-size: 2.1rem;
+    }
+
+.header{
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+>>>>>>> newbranch

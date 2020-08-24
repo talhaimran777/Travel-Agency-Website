@@ -1,3 +1,10 @@
 @import 'normalize.css';
 @import './modules/global_css/_global';
+<<<<<<< HEAD
 @import './modules/HeroSection/_HeroSection';
+=======
+@import './modules/variables/_variables';
+@import './modules/large hero/_large-hero';
+@import './modules/button/_btn';
+@import './modules/header/_header';
+>>>>>>> newbranch

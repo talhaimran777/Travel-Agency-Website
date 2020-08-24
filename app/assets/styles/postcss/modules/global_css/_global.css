@@ -1,6 +1,9 @@
 *{
     margin: 0;
+<<<<<<< HEAD
     padding: 0;
+=======
+>>>>>>> newbranch
     box-sizing: border-box;
 }
 html{
@@ -10,5 +13,14 @@ html{
 body{
     color: black;
     background: white;
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
+=======
+    font-family: 'Roboto', 'sans-serif';
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+>>>>>>> newbranch
 }
