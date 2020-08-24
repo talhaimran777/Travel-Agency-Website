@@ -10,7 +10,8 @@ browserSync = require('browser-sync').create();
 function onCssChange(){
     return src('./app/assets/styles/postcss/*.css')
     .pipe(postCss([postcssImport, autoPrefixer, simpleVars, nestedCss]))
-    .pipe(dest('./app/assets/styles/css/'));
+    .pipe(dest('./app/assets/styles/css/'))
+    .pipe(browserSync.stream());
 }
 
 function onHtmlChange(cb){
@@ -18,14 +19,20 @@ function onHtmlChange(cb){
     cb();
 }
 
+/* Not understanding this method right now but everything working fine */
+/* function injectCss(onCssChange){
+    return src('./app/assets/styles/css/main.css')
+    .pipe(browserSync.stream());
+} */
+
 function watchAll(cb){
     browserSync.init({
         server: {
            baseDir: 'app', 
         }
     });
+    watch('./app/assets/styles/postcss/**/*.css', onCssChange);
     watch('./app/index.html',onHtmlChange);
-    //watch('./app/assets/styles/postcss/**/*.css', onCssChange);
     cb();
 }
 
