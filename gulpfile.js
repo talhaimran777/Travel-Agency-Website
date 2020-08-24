@@ -10,6 +10,10 @@ browserSync = require('browser-sync').create();
 function onCssChange(){
     return src('./app/assets/styles/postcss/*.css')
     .pipe(postCss([postcssImport, autoPrefixer, simpleVars, nestedCss]))
+    .on('error', function(errorInfo){
+        console.log(errorInfo.toString());
+        this.emit('end');
+    })
     .pipe(dest('./app/assets/styles/css/'))
     .pipe(browserSync.stream());
 }
