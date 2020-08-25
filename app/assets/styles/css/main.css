@@ -782,3 +782,56 @@ img{
         justify-content: center;
         align-items: center;
     }
+
+.beginning__paragraph p{
+            text-align: justify;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+
+.headline{
+    font-weight: 300;
+    margin: 4rem 0;
+    /* Default font for the big heading */
+    text-align: center;
+}
+
+@media (max-width: 576px){
+
+.headline{
+        font-size: 2.8rem
+}
+    }
+
+@media (min-width: 576px){
+
+.headline{
+        font-size: 3rem
+}
+    }
+
+@media (min-width: 768px){
+
+.headline{
+        font-size: 3.1rem
+}
+    }
+
+@media (min-width: 992px){
+
+.headline{
+        font-size: 3.2rem
+}
+    }
+
+.headline--blue{
+        color: #2f5572;
+    }
+
+.headline--orange{
+        color: #d59541;
+    }
+
+.headline--w-500{
+        font-weight: 500;
+    }
