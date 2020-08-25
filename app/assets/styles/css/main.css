@@ -515,8 +515,8 @@ img{
 @media (max-width: 576px){
 
 .btn{
-        padding: 1rem 3.4rem;
-        font-size: 1.7rem 
+        padding: 0.8rem 3rem;
+        font-size: 1.5rem 
 }
     }
 
@@ -545,9 +545,135 @@ img{
     }
 
 .header{
-   /*  position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100%; */
+    width: 100%;
+    background: rgb(0, 0, 0, 0.3);
+    padding: 0 2rem;
+    height: 8vh;
 }
+
+@media (max-width: 576px){
+
+.header{
+        height: 6vh
+}
+    }
+
+.header__logo{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2f5572;
+    }
+
+/*      height: 10rem;
+        width: 20rem; */
+
+@media (max-width: 576px){
+
+.header__logo{
+            height: 7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15rem
+    }
+    }
+
+@media (min-width: 576px){
+
+.header__logo{
+            height: 9rem;
+            left: 10%;
+            transform: translateX(-10%);
+            width: 15rem
+    }
+    }
+
+@media (min-width: 768px){
+
+.header__logo{
+            height: 10rem;
+            width: 18rem
+    }
+    }
+
+.header__logo__img{
+            height: 55%;
+        }
+
+.header__nav{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+@media (max-width: 576px){
+
+.header__nav{
+            display: none
+    }
+    }
+
+@media (min-width: 576px){
+
+.header__nav{
+            display: none
+    }
+    }
+
+@media (min-width: 768px){
+
+.header__nav{
+            display: flex
+    }
+    }
+
+@media (max-width: 576px){
+
+.header__btn{
+            display: none
+    }
+    }
+
+@media (min-width: 576px){
+
+.header__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            width: 13rem;
+            height: 4rem;
+            padding: 0
+    }
+    }
+
+.header__list{
+        width: 50%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+    }
+
+.header__item{
+        display: inline;
+    }
+
+.header__link{
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+    }
