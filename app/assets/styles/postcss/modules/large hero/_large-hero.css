@@ -15,21 +15,57 @@
     &__title{
         font-weight: 300;
         &--primary{
-            font-size: 8rem;
+            font-size: 5rem;
             margin-bottom: 0px;
+
+            @mixin atSmall{
+                font-size: 6rem;
+            }
+
+            @mixin atMedium{
+                font-size: 7rem;
+            }
+
+            @mixin atLarge{
+                font-size: 8rem;
+            }
+            
         }
 
         &--secondary{
-            font-size: 4rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 1rem; 
+            @mixin atSmall{
+                font-size: 3rem;
+            }  
+
+            @mixin atMedium{
+                font-size: 3.5rem;
+            }  
+
+            @mixin atLarge{
+                font-size: 4rem;
+            }  
         }
     }
 
     &__paragraph{
         color: white;
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         margin-bottom: 3rem;
         font-weight: 100;
-        text-shadow: 0.2rem 0.2rem 0px rgb(0, 0, 0, 0.2);
+        //text-shadow: 0.2rem 0.2rem 0px rgb(0, 0, 0, 0.2);
+
+            @mixin atSmall{
+                font-size: 1.8rem;
+            }  
+
+            @mixin atMedium{
+                font-size: 2rem;
+            }  
+
+            @mixin atLarge{
+                font-size: 2.3rem;
+            }
     }
 }

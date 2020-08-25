@@ -1,5 +1,8 @@
+const postcssMixins = require('postcss-mixins');
+
 const {src, dest, watch} = require('gulp'),
 postCss = require('gulp-postcss'),
+postCssMixins = require('postcss-mixins'),
 autoPrefixer = require('autoprefixer'),
 simpleVars = require('postcss-simple-vars'),
 nestedCss = require('postcss-nested'),
@@ -9,7 +12,7 @@ browserSync = require('browser-sync').create();
 
 function onCssChange(){
     return src('./app/assets/styles/postcss/*.css')
-    .pipe(postCss([postcssImport, autoPrefixer, simpleVars, nestedCss]))
+    .pipe(postCss([postcssImport, postcssMixins ,autoPrefixer, simpleVars, nestedCss]))
     .on('error', function(errorInfo){
         console.log(errorInfo.toString());
         this.emit('end');
