@@ -24,7 +24,15 @@
 
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
+   <!--  <img src="assets/images/hero--large.jpg"> -->
+
+    <picture>
+      <source srcset="./assets/images/hero--large.jpg" media="(min-width: 1200px)">
+      <source srcset="./assets/images/hero--medium.jpg" media="(min-width: 992px)">
+      <source srcset="./assets/images/hero--small.jpg" media="(min-width: 768px)">
+      <source srcset="./assets/images/hero--small.jpg" media="(min-width: 672px)">
+      <img src="./assets/images/hero--smaller.jpg" alt="smaller">
+    </picture>
     <div class="large-hero__text-content">
       <h1 class = "large-hero__title large-hero__title--primary">Your clarity.</h1>
       <h2 class = "large-hero__title large-hero__title--secondary">One trip away.</h2>
