@@ -1,0 +1,12 @@
+.section{
+    min-height: 100vh;
+
+
+    &--pad-8{
+        padding: 8rem 0;
+    }
+
+    &--bg-blue{
+        background: $blueShade;
+    }
+}

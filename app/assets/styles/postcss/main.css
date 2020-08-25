@@ -5,3 +5,5 @@
 @import './modules/large hero/_large-hero';
 @import './modules/button/_btn';
 @import './modules/header/_header';
+@import './modules/wrapper/_wrapper';
+@import './modules/utility/_section';

@@ -677,3 +677,21 @@ img{
         color: white;
         font-size: 1.8rem;
     }
+
+.wrapper{
+    max-width: 1000px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.section--pad-8{
+        padding: 8rem 0;
+    }
+
+.section--bg-blue{
+        background: #2f5572;
+    }
