@@ -1183,14 +1183,12 @@ img{
 
 .footer__paragraph{
         font-size: 2rem;
-        margin-right: 3rem;
         text-align: center;
     }
 
 @media (max-width: 576px){
 
 .footer__paragraph{
-                font-size: 1.6rem;
-                margin-left: 4rem
+                font-size: 1.6rem
     }
     }
