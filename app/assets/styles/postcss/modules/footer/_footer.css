@@ -1,0 +1,37 @@
+.footer{
+   min-height: 10rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    @mixin atSmaller{
+        min-height: 15rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @mixin atSmall{
+        min-height: 15rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    @mixin atLarge{
+        min-height: 10rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__paragraph{
+        font-size: 2rem;
+        margin-right: 3rem;
+        text-align: center;
+            @mixin atSmaller{
+                font-size: 1.6rem;
+                margin-left: 4rem;
+            }
+    }
+
+
+}
