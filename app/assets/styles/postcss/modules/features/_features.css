@@ -24,11 +24,21 @@
     &__features{
         display: grid; 
         margin: 2rem 0;
-        
-        @mixin atSmaller{
+
+        padding: 0 5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 22rem);
+
+        @mixin atSmallerE{
+            padding: 0;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4, 25rem); 
+        }
+
+        /* @mixin atSmaller{
             grid-template-columns: 100%;
             grid-template-rows: repeat(4, 22rem);
-        }
+        } */
 
         @mixin atSmall{
              grid-template-columns: 100%;
@@ -53,10 +63,9 @@
             &__icon{
                 height: 5rem;
                 margin-right: 2rem;
-                @mixin atSmaller{
+                margin-bottom: 2rem;
+                @mixin atSmallerE{
                     margin-bottom: 2rem;
-                    margin-left: 50%;
-                    transform: translateX(-50%);
                 }
             }
 
@@ -78,8 +87,8 @@
                     font-weight: 400;
                     margin-bottom: 1rem;
 
-                    @mixin atSmaller{
-                        text-align: center;
+                    @mixin atSmallerE{
+                        text-align: left;
                         margin-left: 50%;
                         transform: translateX(-50%);
                         width: 100%;

@@ -1,0 +1,113 @@
+.testimonial-section{
+   /*  background-image: url('./app/assets/images/testimonials-bg.jpg'); */
+
+   /*  background-image: url("./app/assets/images/testimonials-bg.jpg"); */
+    
+    background-image: url('/assets/images/testimonials-bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    &__heading{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 10rem;
+        &__icon{
+            margin-right: 2rem;
+
+             @mixin atSmaller{
+                height: 4rem;
+            }
+        }
+        &__text{
+            font-size: 4rem;
+            font-weight: 400;
+            color: $blueShade;
+
+            @mixin atSmallerE{
+                font-size: 3rem;
+            }
+
+            & span{
+                font-weight: 700;
+            }
+        }
+    }
+
+
+    &__testimonials{
+        display: grid;
+        grid-column-gap: 3rem;
+        padding: 0 15%;
+        @mixin atSmallerE{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, auto);
+            justify-content: center;
+            padding: 0;
+        }
+
+        @mixin atSmall{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, auto);
+            justify-content: center;
+            padding: 0 25%;
+        }
+
+        @mixin atMedium{
+            grid-template-columns: repeat(2, 0.4fr);
+            grid-template-rows: repeat(2, 45rem);
+            justify-content: center;
+            padding: 0;
+        }
+
+        @mixin atLarge{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            justify-content: center;
+            padding: 0;
+        }       
+    }
+
+    &__testimonial{
+        background: white;
+        text-align: center;
+        padding: 0 2rem;
+        padding-bottom: 10rem;
+
+
+        @mixin atSmaller{
+            margin-bottom: 10rem;
+        }
+
+        @mixin atSmall{
+            margin-bottom: 10rem;
+        }
+
+        &__pic{
+            height: 10rem;
+            margin-top: -5rem; 
+            border-radius: 100%;
+            border: 0.5rem solid white;
+            margin-bottom: 2rem;
+        }
+
+        &__name{
+            font-size: 2.5rem;
+            color: $blueShade;
+            margin-bottom: 0.3rem;
+        }
+
+        &__job{
+            font-size: 1.3rem;
+            color: $orangeShade;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        &__paragraph{
+            text-align: left;
+            text-align: justify;
+            line-height: 2rem;
+            font-size: 1.3rem;
+        }
+    }
+}
