@@ -1,0 +1,75 @@
+.feature-section{
+    color: white;
+    &__heading-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6rem;
+        &__icon{
+            height: 5rem;
+            margin-right: 1rem;
+        }
+
+
+        &__label{
+            font-size: 4rem;
+            font-weight: 300;
+
+            & span{
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__features{
+        display: grid;
+        min-height: 50vh;
+        margin: 4rem 0; 
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem; */
+
+
+        @mixin atSmaller{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 15rem);
+        }
+
+        @mixin atSmall{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 15rem);
+        }
+
+        @mixin atLarge{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+
+        &__item{
+            display: flex;
+            justify-content: center;
+            &__icon{
+                height: 5rem;
+                margin-right: 2rem;
+            }
+
+            &__text{
+                width: 60%;
+
+                & h3{
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                }
+
+                & p{
+                    color: silver;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
