@@ -1,0 +1,36 @@
+.btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+
+    &--blue{
+        background: $blueShade;
+    }
+    &--orange{
+        background: $orangeShade;
+    }
+
+    &--rounded{
+        border-radius: 2.5rem;
+    }
+
+    @mixin atSmaller{
+        padding: 0.8rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    @mixin atSmall{
+        padding: 1rem 3.6rem;
+        font-size: 1.8rem;
+    }  
+
+    @mixin atMedium{
+        padding: 1rem 3.8rem;
+        font-size: 1.9rem;
+    }  
+
+    @mixin atLarge{
+        padding: 1rem 4rem;
+        font-size: 2rem;
+    } 
+}

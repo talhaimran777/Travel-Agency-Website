@@ -1,1 +1,14 @@
 @import 'normalize.css';
+@import './modules/global_css/_global';
+@import './modules/global_css/_mixins';
+@import './modules/variables/_variables';
+@import './modules/large hero/_large-hero';
+@import './modules/button/_btn';
+@import './modules/header/_header';
+@import './modules/wrapper/_wrapper';
+@import './modules/utility/_section';
+@import './modules/beginning/_beginning';
+@import './modules/headline/_headline';
+@import './modules/features/_features';
+@import './modules/testimonial/_testimonial';
+@import './modules/footer/_footer';

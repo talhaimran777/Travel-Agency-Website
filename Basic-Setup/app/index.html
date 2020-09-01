@@ -1,21 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./temp_assets/styles/style.css">
-    <title>Boiler Plate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Clear View Escapes</title>
+  <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
+  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <link rel="stylesheet" href="./temp_assets/styles/style.css">
 </head>
-
 <body>
-    <h1>Basic PostCss Setup</h1>
-    <h2>Hello World</h2>
-    
-    
 
-    <script src="./temp_assets/scripts/script.js"></script>
+  <header class = "header">
+    <div class="header__logo">
+      <img class = "header__logo__img"src="./assets/images/icons/clear-view-escapes.svg" alt="logo">
+    </div>
+    
+    <nav class = "header__nav">
+      <ul class = "header__list">
+        <li class = "header__item"><a class = "header__link"href="#our-beginning">Our Beginning</a></li>
+        <li class = "header__item"><a class = "header__link"href="#features">Features</a></li>
+        <li class = "header__item"><a class = "header__link"href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+
+    <a class = "btn btn--blue header__btn"href="#">Get In Touch</a>
+  </header>
+
+
+  <div class="large-hero">
+   <!--  <img src="assets/images/hero--large.jpg"> -->
+
+    <picture>
+      <source srcset="./assets/images/hero--large.jpg" media="(min-width: 1200px)">
+      <source srcset="./assets/images/hero--medium.jpg" media="(min-width: 992px)">
+      <source srcset="./assets/images/hero--small.jpg" media="(min-width: 768px)">
+      <source srcset="./assets/images/hero--small.jpg" media="(min-width: 672px)">
+      <img src="./assets/images/hero--smaller.jpg" alt="smaller">
+    </picture>
+    <div class="large-hero__text-content">
+      <h1 class = "large-hero__title large-hero__title--primary">Your clarity.</h1>
+      <h2 class = "large-hero__title large-hero__title--secondary">One trip away.</h2>
+      <p class = "large-hero__paragraph">We create soul restoring journeys <br> that inspire you to be you.</p>
+      <a class = "btn large-hero__btn btn--orange btn--rounded">Get Started Today</a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div id="our-beginning" class = "beginning section section--pad-8">
+      <h1 class = "beginning__title beginning__title--primary">The first trip we planned <span class = "beginning__span beginning__span--primary">was our own.</span> </h1>
+      <h2 class = "beginning__title beginning__title--secondary">Ever since, we've been working to <br> make travel <span class = "beginning__span beginning__span--secondary">better for everyone.</span> </h2>
+     <!--  <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
+      <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe"> -->
+      
+      <div class="beginning__picture">
+        <picture>
+          <!--   <source media="(min-width: 672px)" srcset="./images/first-trip.jpg"> -->
+           <!--  <img src="./assets/images/first-trip.jpg" alt="photo"> -->
+    
+            <source srcset="./assets/images/first-trip-hi-dpi.jpg" media="(min-width: 1200px)">
+            <source srcset="./assets/images/first-trip.jpg" media="(min-width: 672px)">
+            <img src="./assets/images/first-trip-low-res.jpg" alt="">
+        </picture>
+      </div>
+
+      <div class="beginning__picture">
+        <picture>
+          <!--   <source media="(min-width: 672px)" srcset="./images/first-trip.jpg"> -->
+           <!--  <img src="./assets/images/first-trip.jpg" alt="photo"> -->
+    
+           <!--  <source srcset="" media="(min-width: 1200px)">
+            <source srcset="" media="(min-width: 672px)"> -->
+       <!--      <img src="./assets/images/our-start-landscape-hi-dpi-i.jpg" alt="">  
+            <img src="./assets/images/our-start-landscape-i.jpg" alt="">  
+            <img src="./assets/images/our-start-landscape-small-i.jpg" alt="">  
+            <img src="./assets/images/our-start-i.jpg" alt="">
+            <img src="./assets/images/our-start-portrait-i.jpg" alt=""> -->
+
+            <source media="(min-width: 1200px)" srcset="./assets/images/our-start-landscape-hi-dpi.jpg">
+            <source media="(min-width: 992px)" srcset="./assets/images/our-start-landscape.jpg">
+            <source media="(min-width: 768px)" srcset="./assets/images/our-start-landscape-small.jpg">
+            <source media="(min-width: 672px)" srcset="./assets/images/our-start.jpg">
+            <img src="./assets/images/our-start-portrait.jpg" alt="">
+        </picture>
+      </div>
+      
+      <h2 class = "headline headline--blue headline--w-500">Here&rsquo;s how we got started&hellip;</h2>
+      <div class="wrapper wrapper--medium">
+        <div class="beginning__paragraph">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+        </div>
+      </div>
+     
+    </div>
+  </div>  
+
+  <div class="wrapper">
+    <div id="features" class = " feature-section section section--pad-8 section--bg-blue">
+      
+      <div class="feature-section__heading-section">
+        <img class = "feature-section__heading-section__icon"src="assets/images/icons/star.svg">
+        <h2 class = "feature-section__heading-section__label"> Our <span>Features</span> </h2>
+      </div>
+      
+      <div class="wrapper wrapper--medium">
+        <div class="feature-section__features">
+          <div class="feature-section__features__item">
+            <img class="feature-section__features__item__icon" src="assets/images/icons/rain.svg">
+
+            <div class="feature-section__features__item__text">
+              <h3>We&rsquo;ll Watch the Weather</h3>
+              <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
+            </div>
+          </div> 
+
+          <div class="feature-section__features__item">
+            <img class="feature-section__features__item__icon" src="assets/images/icons/globe.svg">
+            <div class="feature-section__features__item__text">
+              <h3>Global Guides</h3>
+              <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
+            </div>
+          </div>
+
+          <div class="feature-section__features__item">
+            <img class="feature-section__features__item__icon" src="assets/images/icons/wifi.svg">
+            <div class="feature-section__features__item__text">
+              <h3>Wi-Fi Waypoints</h3>
+              <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+            </div>
+          </div>
+
+          <div class="feature-section__features__item">
+            <img class="feature-section__features__item__icon" src="assets/images/icons/fire.svg">
+            <div class="feature-section__features__item__text">
+              <h3>Survival Kit</h3>
+              <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+            </div>
+          </div>
+
+          
+        
+      
+          
+        
+      
+        
+        </div>  <!-- Features -->
+      </div>  
+    </div> <!-- Feature-Section -->
+  </div>  <!-- Feature Wrapper -->
+
+  <div class="wrapper">
+    <div id="testimonials" class = "testimonial-section section section--pad-8">
+    <!--   <img src="./assets/images/testimonials-bg.jpg" alt=""> -->
+      <div class="testimonial-section__heading">
+        <img class = "testimonial-section__heading__icon"src="assets/images/icons/comment.svg">
+        <h2 class = "testimonial-section__heading__text">Real <span>Testimonials</span> </h2>
+      </div>
+
+
+
+      <div class="wrapper wrapper--medium">
+
+        <div class="testimonial-section__testimonials">
+
+          <div class="testimonial-section__testimonial">
+            <img class = "testimonial-section__testimonial__pic" src="assets/images/testimonial-jane.jpg">
+            <h3 class = "testimonial-section__testimonial__name">Jane Doe</h3>
+            <h3 class = "testimonial-section__testimonial__job">9 Time Escaper</h3>
+            <p class = "testimonial-section__testimonial__paragraph">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+          </div>
+    
+          <div class="testimonial-section__testimonial">
+            <img class = "testimonial-section__testimonial__pic" src="assets/images/testimonial-john.jpg">
+            <h3 class = "testimonial-section__testimonial__name">John Smith</h3>
+            <h3 class = "testimonial-section__testimonial__job">4 Time Escaper</h3>
+            <p class = "testimonial-section__testimonial__paragraph">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+          </div>
+    
+          <div class="testimonial-section__testimonial">
+            <img class = "testimonial-section__testimonial__pic" src="assets/images/testimonial-cat.jpg">
+            <h3 class = "testimonial-section__testimonial__name">Cat McKitty</h3>
+            <h3 class = "testimonial-section__testimonial__job">6 Time Escaper</h3>
+            <p class = "testimonial-section__testimonial__paragraph">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+          </div>
+        
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+
+  <footer class = "footer">
+    <p class = "footer__paragraph">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</p>
+    <a class = "btn btn--blue btn--small btn--rounded"href="#">Get in Touch</a>
+  </footer>
+  <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
+  This is the end of the "modal" reference HTML -->
+
+
+
+
+  <script src="./assets/scripts/app.js"></script>
 </body>
-
 </html>
