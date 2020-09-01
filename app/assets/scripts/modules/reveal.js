@@ -10,7 +10,7 @@ export default RevealOnScroll; */
 
 
 function Person(name, age){
-    
+
     this.name = name;
     this.age = age;
 
@@ -20,4 +20,4 @@ function Person(name, age){
 }
 
 
-export default Person;
+module.exports = Person;
